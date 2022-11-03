@@ -63,7 +63,7 @@
   --hl-error-bg: var(--light-red-2);
   --hl-subtle-fg: var(--light-gray-2);
   --hl-entity: var(--light-purple-1);
-  --hl-keyword: var(--light-gray-3);
+  --hl-keyword: var(--light-black);
   --hl-output: var(--light-gray-4);
   --hl-operator: var(--light-black);
   --hl-punctuation: var(--light-subtle-fg);
@@ -140,13 +140,14 @@
     --hl-whitespace: var(--dark-gray-7);
   }
 
-.theme-github {
-  background-color: var(--hl-bg);
-
-  .line-numbers {
+  .theme-github {
     background-color: var(--hl-bg);
-    border-color: var(--hl-border);
-    color: var(--hl-border);
+
+    .line-numbers {
+      background-color: var(--hl-bg);
+      border-color: var(--hl-border);
+      color: var(--hl-border);
+    }
   }
 
   .highlight {
@@ -385,12 +386,19 @@
     } /* Literal.Number.Integer.Long */
 
     /* Make line numbers unselectable: excludes line numbers from copy-paste user ops */
-    .line-number {-webkit-user-select:none;-moz-user-select:none;}
+    .line-number {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+    }
 
     /* Mozilla specific */
-    .line-number::-moz-selection {background-color:transparent;}
+    .line-number::-moz-selection {
+      background-color: transparent;
+    }
 
     /* Other major browsers */
-    .line-number::selection {background-color:transparent;}
+    .line-number::selection {
+      background-color: transparent;
+    }
   }
 }
