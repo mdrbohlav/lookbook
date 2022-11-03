@@ -66,7 +66,7 @@
   --hl-keyword: var(--light-black);
   --hl-output: var(--light-gray-4);
   --hl-operator: var(--light-black);
-  --hl-punctuation: var(--light-subtle-fg);
+  --hl-punctuation: var(--light-gray-6);
   --hl-string: var(--light-red-3);
   --hl-string-other: var(--light-red-3);
   --hl-string-regex: var(--light-green-2);
@@ -81,7 +81,7 @@
   --hl-subheading: var(--light-purple-1);
   --hl-keyword-crude: var(--light-black);
   --hl-keyword-subtle: var(--light-blue-1);
-  --hl-number: var(--light--blue-2);
+  --hl-number: var(--light-blue-2);
   --hl-attribute: var(--light-blue-3);
   --hl-builtin: var(--light-blue-4);
   --hl-builtin-pseudo: var(--light-gray-5);
